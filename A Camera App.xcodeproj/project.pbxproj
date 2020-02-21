@@ -3,13 +3,12 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		DF2EC09A23FCC139004BD509 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF2EC09923FCC139004BD509 /* AppDelegate.swift */; };
-		DF2EC09C23FCC139004BD509 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF2EC09B23FCC139004BD509 /* SceneDelegate.swift */; };
-		DF2EC09E23FCC139004BD509 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF2EC09D23FCC139004BD509 /* ViewController.swift */; };
+		DF2EC09E23FCC139004BD509 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF2EC09D23FCC139004BD509 /* HomeViewController.swift */; };
 		DF2EC0A123FCC139004BD509 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DF2EC09F23FCC139004BD509 /* Main.storyboard */; };
 		DF2EC0A323FCC13C004BD509 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DF2EC0A223FCC13C004BD509 /* Assets.xcassets */; };
 		DF2EC0A623FCC13C004BD509 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DF2EC0A423FCC13C004BD509 /* LaunchScreen.storyboard */; };
@@ -18,8 +17,7 @@
 /* Begin PBXFileReference section */
 		DF2EC09623FCC139004BD509 /* A Camera App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "A Camera App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DF2EC09923FCC139004BD509 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		DF2EC09B23FCC139004BD509 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		DF2EC09D23FCC139004BD509 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		DF2EC09D23FCC139004BD509 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		DF2EC0A023FCC139004BD509 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		DF2EC0A223FCC13C004BD509 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DF2EC0A523FCC13C004BD509 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -57,8 +55,7 @@
 			isa = PBXGroup;
 			children = (
 				DF2EC09923FCC139004BD509 /* AppDelegate.swift */,
-				DF2EC09B23FCC139004BD509 /* SceneDelegate.swift */,
-				DF2EC09D23FCC139004BD509 /* ViewController.swift */,
+				DF2EC09D23FCC139004BD509 /* HomeViewController.swift */,
 				DF2EC09F23FCC139004BD509 /* Main.storyboard */,
 				DF2EC0A223FCC13C004BD509 /* Assets.xcassets */,
 				DF2EC0A423FCC13C004BD509 /* LaunchScreen.storyboard */,
@@ -95,7 +92,7 @@
 			attributes = {
 				LastSwiftUpdateCheck = 1130;
 				LastUpgradeCheck = 1130;
-				ORGANIZATIONNAME = AkhilPothana;
+				ORGANIZATIONNAME = "Akhil Pothana";
 				TargetAttributes = {
 					DF2EC09523FCC139004BD509 = {
 						CreatedOnToolsVersion = 11.3.1;
@@ -103,7 +100,7 @@
 				};
 			};
 			buildConfigurationList = DF2EC09123FCC139004BD509 /* Build configuration list for PBXProject "A Camera App" */;
-			compatibilityVersion = "Xcode 9.3";
+			compatibilityVersion = "Xcode 11.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -138,9 +135,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DF2EC09E23FCC139004BD509 /* ViewController.swift in Sources */,
+				DF2EC09E23FCC139004BD509 /* HomeViewController.swift in Sources */,
 				DF2EC09A23FCC139004BD509 /* AppDelegate.swift in Sources */,
-				DF2EC09C23FCC139004BD509 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -287,6 +283,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 8GKYAMHZVK;
 				INFOPLIST_FILE = "A Camera App/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -294,7 +291,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "AkhilPothana.A-Camera-App";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -305,6 +302,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 8GKYAMHZVK;
 				INFOPLIST_FILE = "A Camera App/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -312,7 +310,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "AkhilPothana.A-Camera-App";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
